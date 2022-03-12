@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://upbeat-tesla-b2db39.netlify.app/"
 languageCode = "en-us"
 summaryLength = 20
 disqusShortname = ""
