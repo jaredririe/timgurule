@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "/static/images/uploads" # Location where media files will be stored in the repo
+public_folder: "/images/uploads" # The src attribute for uploaded media
+
+collections:
+  - name: "blog" # Used in admin routes, e.g., /admin/collections/blog
+    label: "Blog Posts" # Used in the admin UI in the sidebar
+    folder: "content/posts" # The path to the folder where the documents are stored
+    path: "{{slug}}"
+    media_folder: "/static/images/uploads" # Location where media files will be stored in the repo
+    public_folder: "/images/uploads" # The src attribute for uploaded media
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: true }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Call to Action", name: "call_to_action", widget: "select", options: ["Contact", "Blog", "Map"] }
+          - { label: "Large Header", name: "large_header", widget: "hidden", default: false }
+          - { label: "Type", name: "type", widget: "hidden", default: "contact" }
+          - { label: "Body", name: "body", widget: "markdown" }
