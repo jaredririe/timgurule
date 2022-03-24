@@ -17,7 +17,6 @@ enableRobotsTXT = true
   posts = ":section/:year/:month/:day/:title/"
 
 [params]
-  #backgroundImagePath = "/uploads/building.jpg"
   backgroundImagePath = "/images/tim-profile.png"
   description = "Hugo template with example content for a law firm."
   images = ["siteicon.png"]
