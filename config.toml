@@ -14,7 +14,7 @@ enableRobotsTXT = true
   unsafe = true # Allows HTML <img> tags inside Markdown content
 
 [permalinks]
-  posts = ":section/:year/:month/:day/:title/"
+  blog = ":section/:year/:month/:day/:title/"
 
 [params]
   backgroundImagePath = "/images/tim-profile.png"
