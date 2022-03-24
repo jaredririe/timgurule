@@ -1,7 +1,7 @@
 <header style="background-image: url('{{ $.Site.Params.backgroundImagePath }}');" {{ if .Params.large_header }}class="main-hero"{{ end }}>
 	<div class="container">
 		<h1><a href="/">
-			{{ $title_parts := split $.Site.Data.company.title " " }}
+			{{ $title_parts := split $.Site.Data.personal.title " " }}
 			{{ range $i, $part := $title_parts }}
 				{{ if $i }}<br>{{ end }}
 				{{ $part }}

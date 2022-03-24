@@ -7,14 +7,14 @@
 				<p class="editor-link"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update Company Details</a></p>
 
 				<label>Phone Number</label>
-				<p class="contact-info"><a href="tel:{{ $.Site.Data.company.phone }}">{{ $.Site.Data.company.phone }}</a></p>
+				<p class="contact-info"><a href="tel:{{ $.Site.Data.personal.phone }}">{{ $.Site.Data.personal.phone }}</a></p>
 
 				<label>Email Address</label>
-				<p class="contact-info"><a href="mailto:{{ $.Site.Data.company.contact_email_address }}">{{ $.Site.Data.company.contact_email_address }}</a></p>
+				<p class="contact-info"><a href="mailto:{{ $.Site.Data.personal.contact_email_address }}">{{ $.Site.Data.personal.contact_email_address }}</a></p>
 
 				<label>Postal Address</label>
 				<address class="contact-info">
-					{{ $postal_address_parts := split $.Site.Data.company.postal_address "," }}
+					{{ $postal_address_parts := split $.Site.Data.personal.postal_address "," }}
 					{{ range $i, $part := $postal_address_parts }}
 						{{ if $i }}<br>{{ end }}
 						{{ $part }}
@@ -22,7 +22,7 @@
 				</address>
 				<label>Address</label>
 				<address class="contact-info">
-					{{ $address_parts := split $.Site.Data.company.address "," }}
+					{{ $address_parts := split $.Site.Data.personal.address "," }}
 					{{ range $i, $part := $address_parts }}
 						{{ if $i }}<br>{{ end }}
 						{{ $part }}
@@ -41,7 +41,7 @@
 					<label for="message">Message</label>
 					<textarea id="message" name="message"></textarea>
 
-					<input type="hidden" name="_to" value="{{ $.Site.Data.company.contact_email_address }}">
+					<input type="hidden" name="_to" value="{{ $.Site.Data.personal.contact_email_address }}">
 					<input type="text" name="_gotcha" style="display: none;">
 
 					<input type="submit" value="Send Message">

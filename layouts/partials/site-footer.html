@@ -20,7 +20,7 @@
 				<li>
 					<h2>Social</h2>
 				</li>
-				{{ range $.Site.Data.company.social_links }}
+				{{ range $.Site.Data.personal.social_links }}
 					<li>
 						<a target="_blank" rel="noopener" href="{{ .link }}" class="{{ .name | urlize }}-icon">
 							{{ partial "social-icon.html" . }}
@@ -32,9 +32,9 @@
 
 			<ul class="footer-links">
 				<li>
-					<h2>{{ $.Site.Data.company.title }}</h2>
+					<h2>{{ $.Site.Data.personal.title }}</h2>
 				</li>
-				<li>{{ $.Site.Data.company.description }}</li>
+				<li>{{ $.Site.Data.personal.description }}</li>
 				<li><a href="/blog/index.xml">{{ partial "social-icon.html" (dict "context" . "name" "RSS") }} Subscribe with RSS</a></li>
 			</ul>
 		</div>
