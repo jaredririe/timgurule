@@ -20,7 +20,7 @@ enableRobotsTXT = true
   backgroundImagePath = "/images/tim-profile.png"
   description = "Hugo template with example content for a law firm."
   images = ["siteicon.png"]
-  title = "Timothy Gurule"
+  title = "Tim Gurule"
 
 [params._options.type]
   hidden = true
