@@ -10,15 +10,7 @@
 				<label>Email Address</label>
 				<p class="contact-info"><a href="mailto:{{ $.Site.Data.personal.contact_email_address }}">{{ $.Site.Data.personal.contact_email_address }}</a></p>
 
-				<label>Postal Address</label>
-				<address class="contact-info">
-					{{ $postal_address_parts := split $.Site.Data.personal.postal_address "," }}
-					{{ range $i, $part := $postal_address_parts }}
-						{{ if $i }}<br>{{ end }}
-						{{ $part }}
-					{{ end }}
-				</address>
-				<label>Address</label>
+				<label>Corporate Office Address</label>
 				<address class="contact-info">
 					{{ $address_parts := split $.Site.Data.personal.address "," }}
 					{{ range $i, $part := $address_parts }}

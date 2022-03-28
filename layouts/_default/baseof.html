@@ -52,16 +52,22 @@
 			<section class="map-section">
 				<div id="map"></div>
 			</section>
+		{{ else if eq .Params.call_to_action "Apply" }}
+			<section class="quote-section">
+				<p class="container editable">
+					<a href="https://apply.awmnow.com/#/journey?referrerId=tgurule%40allwestern.com&loanType=MORTGAGE">Apply online</a> today to start your home searching journey!
+				</p>
+			</section>
 		{{ else if eq .Params.call_to_action "Contact" }}
 			<section class="quote-section">
 				<p class="container editable">
-					<a href="/contact/">Contact us</a> today to find out how we can help you. Your first consultation is free.
+					<a href="/contact/">Contact me</a> for a free consultation
 				</p>
 			</section>
 		{{ else }}
 			<section class="quote-section">
 				<p class="container editable">
-					<a href="/blog/">Read our blog</a> for an introduction and quick tips on various areas of the law.
+					<a href="/blog/">Read my blog</a> where I share real estate and wealth building tips
 				</p>
 			</section>
 		{{ end }}

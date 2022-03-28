@@ -9,4 +9,4 @@ menu:
     weight: 5
 ---
 
-Get an introduction to some industry topics and stay informed with our in-depth articles.
+Interested in learning more about how I think? These blog posts share some of my real estate and wealthy building tips.

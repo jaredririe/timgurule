@@ -10,5 +10,4 @@ menu:
     weight: 2
 ---
 
-Serving your community for over a century, Justice Law is committed to helping people through a number of services.
-Our services range from conveyancing, mortgages to family law. Our clients range from large businesses to first home buyers.
+I pride myself on honesty, communication and knowledge in everything I do. With the ever changing mortgage lending environment, it is vital that you are working with a trustworthy partner that understands your goals and knows how to achieve them.
